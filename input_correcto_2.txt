@@ -1,0 +1,7 @@
+automate clima cuidadoCultivos {
+    monitorear temperatura cada 10 min;
+    monitorear humedad cada 30 min;
+    cuando temperatura sube de 32° hacer activar riego;
+    cuando humedad sube de 81% hacer activar ventilacion;
+    imprimir "Caluroso" cada 60 min;
+}

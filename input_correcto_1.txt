@@ -1,0 +1,5 @@
+automate clima controlHumedad {
+    monitorear humedad cada 180 min;
+    cuando humedad sube de 67% hacer activar riego;
+    imprimir "Humedo" cada 10 min;
+}

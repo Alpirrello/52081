@@ -1,0 +1,3 @@
+automate clima climaMdz {
+    monitoreo temp cada 1 hs;
+}

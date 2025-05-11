@@ -1,0 +1,5 @@
+automate clima climaGeneral {
+    monitorear clima cada 60 min;
+    cuando temperatura baja de 20 hacer ventilar;
+    imprimir "Templado" cada 5 seg;
+}
