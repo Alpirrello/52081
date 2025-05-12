@@ -1,0 +1,16 @@
+{
+  "name": "52081",
+  "version": "1.0.0",
+  "description": "Alumno: Alfredo Pirrelo\r Legajo: 52081\r Para clonar usar: git clone https://github.com/Alpirrello/52081.git",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.13.2"
+  }
+}

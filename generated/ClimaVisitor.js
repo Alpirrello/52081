@@ -1,4 +1,4 @@
-// Generated from c:/Users/Usuario/Desktop/1UTN/Sintaxis/52081/Analizador25914_3/Clima.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Usuario/Desktop/1UTN/Sintaxis/52081/Clima.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
@@ -10,43 +10,35 @@ export default class ClimaVisitor extends antlr4.tree.ParseTreeVisitor {
 	visitClima_script(ctx) {
 	  return this.visitChildren(ctx);
 	}
-
-
+	
 	// Visit a parse tree produced by ClimaParser#action.
 	visitAction(ctx) {
 	  return this.visitChildren(ctx);
 	}
-
 
 	// Visit a parse tree produced by ClimaParser#monitoreo.
 	visitMonitoreo(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
-
 	// Visit a parse tree produced by ClimaParser#respuesta.
 	visitRespuesta(ctx) {
 	  return this.visitChildren(ctx);
 	}
-
 
 	// Visit a parse tree produced by ClimaParser#imprimir.
 	visitImprimir(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
-
 	// Visit a parse tree produced by ClimaParser#sensor_clima.
 	visitSensor_clima(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
-
 	// Visit a parse tree produced by ClimaParser#aspecto.
 	visitAspecto(ctx) {
 	  return this.visitChildren(ctx);
 	}
-
-
 
 }

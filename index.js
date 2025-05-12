@@ -1,19 +1,13 @@
-import antlr4, { CharStreams, CommonTokenStream, ParseTreeWalker } from "antlr4";
+import antlr4 from "antlr4";
 import ClimaLexer from "./generated/ClimaLexer.js";
 import ClimaParser from "./generated/ClimaParser.js";
-import readline from 'readline';
 import fs from 'fs';
 
-async function main() {
-    let input;
+const input = fs.readFileSync('./input.txt', 'utf8');
+const chars = new antlr4.InputStream(input);
+const lexer = new ClimaLexer(chars);
+const tokens = new antlr4.CommonTokenStream(lexer);
+const parser = new ClimaParser(tokens);
+const tree = parser.clima_script();
 
-    // Proceso la entrada con el analizador e imprimo el arbol de analisis en formato texto
-    let inputStream = CharStreams.fromString(input);
-    let lexer = new ClimaLexer(inputStream);
-    let tokenStream = new CommonTokenStream(lexer);
-    let parser = new ClimaParser(tokenStream);
-    let tree = parser.prog();
-}
-
-// Ejecuta la función principal
-main();
+console.log("Arbol de derivacion:\n\r" + tree.toStringTree(parser.ruleNames));

@@ -2,7 +2,7 @@ grammar Clima;
 
 //Parser
 
-clima_script
+clima_script 
   : AUTO CLIMA ID LKEY (action)* RKEY 
   ;
 
