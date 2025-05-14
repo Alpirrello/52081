@@ -11,19 +11,19 @@ export default class CustomClimaVisitor extends ClimaVisitor {
 
   visitAction(ctx) {
     if (ctx.imprimir()) {
-    return this.visitImprimir(ctx.imprimir());
-  }
+      return this.visitImprimir(ctx.imprimir());
+    }
     if (ctx.monitoreo()) {
-    return this.visitMonitoreo(ctx.monitoreo());
-  }
+      return this.visitMonitoreo(ctx.monitoreo());
+    }
     if (ctx.respuesta()) {
-    return this.visitRespuesta(ctx.respuesta());
-  }
+      return this.visitRespuesta(ctx.respuesta());
+    }
     return null;
   }
 
   visitImprimir(ctx) {
-    const texto = ctx.STRING().getText().slice(1, -1); // elimina comillas
+    const texto = ctx.STRING().getText().slice(1, -1); 
     const minutos = parseInt(ctx.NUM().getText());
     console.log(`Configurado imprimir "${texto}" cada ${minutos} minutos`);
     setInterval(() => { console.log(texto); }, minutos * 1000); 
@@ -31,12 +31,22 @@ export default class CustomClimaVisitor extends ClimaVisitor {
   }
 
   visitMonitoreo(ctx) {
-    console.log(ctx.sensor_clima().getText());
+    const sensor = ctx.sensor_clima().getText();
+    if (sensor === 'temperatura') {
+      console.log('Monitoreando temperatura');
+    } else if (sensor === 'humedad') {
+      console.log('Monitoreando humedad');
+    }
     return null;
   }
 
   visitRespuesta(ctx) {
-    console.log(ctx.sensor_clima().getText());
+    const sensor = ctx.sensor_clima().getText();
+    if (sensor === 'temperatura') {
+      console.log('Respuesta cuando temperatura sube');
+    } else if (sensor === 'humedad') {
+      console.log('Respuesta cuando humedad sube');
+    }
     return null;
-  } 
+  }
 }
