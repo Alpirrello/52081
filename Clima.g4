@@ -20,7 +20,7 @@ respuesta
   ;
 
 imprimir
-  : PRINT COMMI ID COMMI CADA NUM MIN SEMI
+  : PRINT STRING CADA NUM MIN SEMI
   ;
 
 sensor_clima
@@ -54,10 +54,10 @@ VENTI:'ventilacion';
 SEMI: ';';
 LKEY: '{';
 RKEY: '}';
-COMMI: '"';
 NUM: [0-9]+;
 TEM: '\u00B0';
 HUME: '\u0025';
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;
+STRING: '"' (~["\r\n])* '"';
 
 WS: [ \t\n\r] -> skip;

@@ -1,4 +1,4 @@
-// Generated from c:/Users/Usuario/Desktop/1UTN/Sintaxis/52081/Clima.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Usuario/Documents/GitHub/52081/Clima.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 

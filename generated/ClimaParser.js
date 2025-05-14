@@ -1,26 +1,25 @@
-// Generated from c:/Users/Usuario/Desktop/1UTN/Sintaxis/52081/Clima.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Usuario/Documents/GitHub/52081/Clima.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import ClimaListener from './ClimaListener.js';
 import ClimaVisitor from './ClimaVisitor.js';
 
-const serializedATN = [4,1,24,63,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,
+const serializedATN = [4,1,24,61,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,
 2,5,7,5,2,6,7,6,1,0,1,0,1,0,1,0,1,0,5,0,20,8,0,10,0,12,0,23,9,0,1,0,1,0,
 1,1,1,1,1,1,3,1,30,8,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,
-3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,6,1,
-6,1,6,0,0,7,0,2,4,6,8,10,12,0,3,1,0,21,22,1,0,11,12,1,0,14,15,58,0,14,1,
-0,0,0,2,29,1,0,0,0,4,31,1,0,0,0,6,38,1,0,0,0,8,49,1,0,0,0,10,58,1,0,0,0,
-12,60,1,0,0,0,14,15,5,1,0,0,15,16,5,2,0,0,16,17,5,23,0,0,17,21,5,17,0,0,
-18,20,3,2,1,0,19,18,1,0,0,0,20,23,1,0,0,0,21,19,1,0,0,0,21,22,1,0,0,0,22,
-24,1,0,0,0,23,21,1,0,0,0,24,25,5,18,0,0,25,1,1,0,0,0,26,30,3,4,2,0,27,30,
-3,6,3,0,28,30,3,8,4,0,29,26,1,0,0,0,29,27,1,0,0,0,29,28,1,0,0,0,30,3,1,0,
-0,0,31,32,5,3,0,0,32,33,3,10,5,0,33,34,5,4,0,0,34,35,5,20,0,0,35,36,5,5,
-0,0,36,37,5,16,0,0,37,5,1,0,0,0,38,39,5,6,0,0,39,40,3,10,5,0,40,41,5,7,0,
-0,41,42,5,8,0,0,42,43,5,20,0,0,43,44,7,0,0,0,44,45,5,9,0,0,45,46,5,10,0,
-0,46,47,3,12,6,0,47,48,5,16,0,0,48,7,1,0,0,0,49,50,5,13,0,0,50,51,5,19,0,
-0,51,52,5,23,0,0,52,53,5,19,0,0,53,54,5,4,0,0,54,55,5,20,0,0,55,56,5,5,0,
-0,56,57,5,16,0,0,57,9,1,0,0,0,58,59,7,1,0,0,59,11,1,0,0,0,60,61,7,2,0,0,
-61,13,1,0,0,0,2,21,29];
+3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,6,1,6,1,6,0,
+0,7,0,2,4,6,8,10,12,0,3,1,0,20,21,1,0,11,12,1,0,14,15,56,0,14,1,0,0,0,2,
+29,1,0,0,0,4,31,1,0,0,0,6,38,1,0,0,0,8,49,1,0,0,0,10,56,1,0,0,0,12,58,1,
+0,0,0,14,15,5,1,0,0,15,16,5,2,0,0,16,17,5,22,0,0,17,21,5,17,0,0,18,20,3,
+2,1,0,19,18,1,0,0,0,20,23,1,0,0,0,21,19,1,0,0,0,21,22,1,0,0,0,22,24,1,0,
+0,0,23,21,1,0,0,0,24,25,5,18,0,0,25,1,1,0,0,0,26,30,3,4,2,0,27,30,3,6,3,
+0,28,30,3,8,4,0,29,26,1,0,0,0,29,27,1,0,0,0,29,28,1,0,0,0,30,3,1,0,0,0,31,
+32,5,3,0,0,32,33,3,10,5,0,33,34,5,4,0,0,34,35,5,19,0,0,35,36,5,5,0,0,36,
+37,5,16,0,0,37,5,1,0,0,0,38,39,5,6,0,0,39,40,3,10,5,0,40,41,5,7,0,0,41,42,
+5,8,0,0,42,43,5,19,0,0,43,44,7,0,0,0,44,45,5,9,0,0,45,46,5,10,0,0,46,47,
+3,12,6,0,47,48,5,16,0,0,48,7,1,0,0,0,49,50,5,13,0,0,50,51,5,23,0,0,51,52,
+5,4,0,0,52,53,5,19,0,0,53,54,5,5,0,0,54,55,5,16,0,0,55,9,1,0,0,0,56,57,7,
+1,0,0,57,11,1,0,0,0,58,59,7,2,0,0,59,13,1,0,0,0,2,21,29];
 
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -36,11 +35,11 @@ export default class ClimaParser extends antlr4.Parser {
                             "'cada'", "'min'", "'cuando'", "'sube'", "'de'", 
                             "'hacer'", "'activar'", "'temperatura'", "'humedad'", 
                             "'imprimir'", "'riego'", "'ventilacion'", "';'", 
-                            "'{'", "'}'", "'\"'", null, "'\\u00B0'", "'\\u0025'" ];
+                            "'{'", "'}'", null, "'\\u00B0'", "'\\u0025'" ];
     static symbolicNames = [ null, "AUTO", "CLIMA", "MONI", "CADA", "MIN", 
                              "WHEN", "SUBE", "DE", "HACER", "ACTIVAR", "TEMP", 
                              "HUM", "PRINT", "RIEGO", "VENTI", "SEMI", "LKEY", 
-                             "RKEY", "COMMI", "NUM", "TEM", "HUME", "ID", 
+                             "RKEY", "NUM", "TEM", "HUME", "ID", "STRING", 
                              "WS" ];
     static ruleNames = [ "clima_script", "action", "monitoreo", "respuesta", 
                          "imprimir", "sensor_clima", "aspecto" ];
@@ -189,7 +188,7 @@ export default class ClimaParser extends antlr4.Parser {
 	        this.match(ClimaParser.NUM);
 	        this.state = 43;
 	        _la = this._input.LA(1);
-	        if(!(_la===21 || _la===22)) {
+	        if(!(_la===20 || _la===21)) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -228,18 +227,14 @@ export default class ClimaParser extends antlr4.Parser {
 	        this.state = 49;
 	        this.match(ClimaParser.PRINT);
 	        this.state = 50;
-	        this.match(ClimaParser.COMMI);
+	        this.match(ClimaParser.STRING);
 	        this.state = 51;
-	        this.match(ClimaParser.ID);
-	        this.state = 52;
-	        this.match(ClimaParser.COMMI);
-	        this.state = 53;
 	        this.match(ClimaParser.CADA);
-	        this.state = 54;
+	        this.state = 52;
 	        this.match(ClimaParser.NUM);
-	        this.state = 55;
+	        this.state = 53;
 	        this.match(ClimaParser.MIN);
-	        this.state = 56;
+	        this.state = 54;
 	        this.match(ClimaParser.SEMI);
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -263,7 +258,7 @@ export default class ClimaParser extends antlr4.Parser {
 	    var _la = 0;
 	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 58;
+	        this.state = 56;
 	        _la = this._input.LA(1);
 	        if(!(_la===11 || _la===12)) {
 	        this._errHandler.recoverInline(this);
@@ -294,7 +289,7 @@ export default class ClimaParser extends antlr4.Parser {
 	    var _la = 0;
 	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 60;
+	        this.state = 58;
 	        _la = this._input.LA(1);
 	        if(!(_la===14 || _la===15)) {
 	        this._errHandler.recoverInline(this);
@@ -339,11 +334,11 @@ ClimaParser.VENTI = 15;
 ClimaParser.SEMI = 16;
 ClimaParser.LKEY = 17;
 ClimaParser.RKEY = 18;
-ClimaParser.COMMI = 19;
-ClimaParser.NUM = 20;
-ClimaParser.TEM = 21;
-ClimaParser.HUME = 22;
-ClimaParser.ID = 23;
+ClimaParser.NUM = 19;
+ClimaParser.TEM = 20;
+ClimaParser.HUME = 21;
+ClimaParser.ID = 22;
+ClimaParser.STRING = 23;
 ClimaParser.WS = 24;
 
 ClimaParser.RULE_clima_script = 0;
@@ -639,20 +634,8 @@ class ImprimirContext extends antlr4.ParserRuleContext {
 	    return this.getToken(ClimaParser.PRINT, 0);
 	};
 
-	COMMI = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(ClimaParser.COMMI);
-	    } else {
-	        return this.getToken(ClimaParser.COMMI, i);
-	    }
-	};
-
-
-	ID() {
-	    return this.getToken(ClimaParser.ID, 0);
+	STRING() {
+	    return this.getToken(ClimaParser.STRING, 0);
 	};
 
 	CADA() {
