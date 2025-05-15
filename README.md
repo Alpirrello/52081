@@ -6,9 +6,9 @@
 git clone https://github.com/Alpirrello/52081.git
 ```
 ## IMPORTANTE
-- Para ejecutar el proyecto, **debe correrse desde el archivo `Clima.g4`** (usando F5, etc. para los errores léxicos/sintácticos) **O desde la terminal con `node .\index.js` (recomendado, ya que esta también ""ejecutara" el código del mismo)**
+- Para ejecutar el proyecto, **debe correrse desde el archivo `Clima.g4`** (usando F5, etc. para ver el árbol de derivacion graficamente) **O desde la terminal con `node .\index.js` (recomendado, ya que esta también ""ejecutara" el código del mismo)**
 - Se cambio el tiempo que se imprime en la consola de:
- minutos -> segundos
+**minutos -> segundos**
  ya que esto sino supondria de un tiempo de espera extremadamente largo para su ejecución...
  - Para terminar la ejecución en la terminal presione Ctrl+C
 
