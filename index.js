@@ -57,7 +57,6 @@ if (huboErrorLexico) {
     }
   });
 
-  // Realizar parsing y mostrar árbol
   parser2.buildParseTrees = true;
   const tree = parser2.clima_script();
 
